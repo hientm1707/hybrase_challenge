@@ -1,5 +1,3 @@
-Here's the Markdown code for the README document you can use for your repository:
-
 ```markdown
 # Hybrase Challenge
 
