@@ -1,4 +1,3 @@
-```markdown
 # Hybrase Challenge
 
 Welcome to the Hybrase Challenge repository! This project is a project management application that includes user authentication, project and task management, and AI features for information retrieval and chatbot functionality.
@@ -301,7 +300,3 @@ Contributions are welcome! Please follow these steps to contribute:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-```
-
-Feel free to copy and paste this Markdown code
