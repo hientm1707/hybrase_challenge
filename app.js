@@ -4,7 +4,9 @@ const bodyParser = require('body-parser');
 const db = require('./config/db');
 const http = require('http');
 const socketIo = require('socket.io');
-const { NlpManager } = require('@nlpjs/basic');
+const { NlpManager } = require('node-nlp');
+const cors = require('cors'); // Import the cors package
+
 
 // Routes
 const authRoutes = require('./routes/authRoutes');
@@ -28,6 +30,9 @@ app.use('/api/tasks', taskRoutes);
 app.use('/api/messages', messageRoutes);
 app.use('/api/ai', aiRoutes);
 
+// Middleware
+app.use(cors()); // Enable CORS
+app.use(express.json());
 
 const server = http.createServer(app);
 const io = socketIo(server);
