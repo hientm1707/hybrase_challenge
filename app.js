@@ -13,7 +13,6 @@ const authRoutes = require('./routes/authRoutes');
 const projectRoutes = require('./routes/projectRoutes');
 const taskRoutes = require('./routes/taskRoutes');
 const messageRoutes = require('./routes/messageRoutes');
-const aiRoutes = require('./routes/aiRoutes');
 const Project = require("./models/Project");
 const Task = require("./models/Task");
 
@@ -28,7 +27,6 @@ app.use('/api/auth', authRoutes);
 app.use('/api/projects', projectRoutes);
 app.use('/api/tasks', taskRoutes);
 app.use('/api/messages', messageRoutes);
-app.use('/api/ai', aiRoutes);
 
 // Middleware
 app.use(cors()); // Enable CORS

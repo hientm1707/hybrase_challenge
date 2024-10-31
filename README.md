@@ -204,22 +204,7 @@ This will build the Docker containers and start the application.
 
 ### AI Features
 
-- **GET /api/ai/query**
-    - Query the knowledge base.
-    - **Request Parameters**: `query` (string)
-    - **Response**:
-        - **200 OK**: Returns the retrieved information.
-
-- **POST /api/ai/chatbot**
-    - Send a message to the chatbot.
-    - **Request Body**:
-      ```json
-      {
-        "message": "What is the project status?"
-      }
-      ```
-    - **Response**:
-        - **200 OK**: Returns the chatbot's response.
+- Connect to socket on port 3000 and use chatbot to interact
 
 ## Usage Examples
 
