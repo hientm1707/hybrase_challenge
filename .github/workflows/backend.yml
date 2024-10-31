@@ -6,7 +6,7 @@ on:
       - master
     paths:
       - '.'
-      - 'docker/Dockerfile.app'
+      - 'Dockerfile'
   workflow_dispatch:
     inputs:
       logLevel:
@@ -45,7 +45,7 @@ jobs:
           file: docker/Dockerfile.app
           push: true
           tags: |
-            minhhien1772000/panda-be:latest
+            minhhien1772000/hybrase-be:latest
 
   deploy:
     needs: build-and-push
